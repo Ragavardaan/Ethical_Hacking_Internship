@@ -1,0 +1,8 @@
+Ubuntu pwd:
+main user:
+username: ragav
+pwd: vRagav@k26
+
+side user:
+username: analyst
+pwd: analyst@k26

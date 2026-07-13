@@ -1,0 +1,174 @@
+Task 2 – Linux Privilege Escalation Lab
+
+Internship Domain
+
+Cyber Security
+
+Task Overview
+
+The objective of this task was to build a Linux privilege escalation practice environment using Ubuntu Server inside Oracle VirtualBox. The lab simulates a small company infrastructure where different departments store confidential information. The environment is intentionally configured to help understand Linux permissions, user management, sudo privileges, and privilege escalation concepts.
+
+Environment Details
+
+Operating System:
+Ubuntu Server 26.04 LTS
+
+Virtualization Platform:
+Oracle VirtualBox
+
+Host Operating System:
+Windows 11
+
+Objectives
+
+- Install Ubuntu Server
+- Create multiple users
+- Build a simulated company directory structure
+- Create department files
+- Configure ownership and permissions
+- Configure limited sudo privileges
+- Understand Linux privilege escalation methodology
+- Document every step
+
+Work Performed
+
+1. Ubuntu Installation
+
+Installed Ubuntu Server inside Oracle VirtualBox and completed the initial configuration.
+
+
+2. User Creation
+
+Created two users.
+
+Administrator:
+
+- ragav
+
+Limited User:
+
+- analyst
+
+Verified both user accounts.
+
+
+3. Company Directory Structure
+
+Created the following structure under:
+
+/opt/securetech
+
+Departments:
+
+- HR
+- Finance
+- IT
+- Backups
+
+
+4. Internal Company Files
+
+Created sample files representing confidential company information.
+
+Examples include:
+
+- Payroll records
+- Financial report
+- IT maintenance notes
+- Backup logs
+
+
+5. File Permissions
+
+Configured ownership as:
+
+root:root
+
+Applied permissions so that:
+
+- Files are readable by normal users.
+- Modification is restricted to root.
+
+Verified that analyst could read files but could not modify them.
+
+
+6. Student Flag
+
+Created a user flag for practice purposes.
+
+Verified the flag successfully.
+
+
+7. Backup Script
+
+Created a backup script inside the backups directory.
+
+Configured execution permission.
+
+Verified script availability.
+
+
+8. Sudo Configuration
+
+Configured sudoers so that the analyst user could execute only the backup script without requiring a password.
+
+Verified using:
+
+sudo -l
+
+
+Security Concepts Learned
+
+During this task the following Linux concepts were learned:
+
+- Linux user management
+- User groups
+- File ownership
+- File permissions
+- Directory permissions
+- chmod
+- chown
+- sudo
+- sudoers configuration
+- Least privilege principle
+- Enumeration basics
+- Privilege escalation methodology
+
+
+Challenges Faced
+
+- Initial Ubuntu installation
+- Understanding Linux directory hierarchy
+- Learning Linux commands
+- Configuring file permissions
+- Understanding sudoers configuration
+- Troubleshooting script execution
+
+All issues were resolved successfully through testing and verification.
+
+
+Learning Outcome
+
+This task provided practical exposure to Linux system administration and privilege escalation fundamentals.
+
+The lab helped in understanding how Linux permissions protect sensitive data, how administrative privileges are delegated, and how improper privilege assignment can introduce security risks.
+
+The task also improved familiarity with Ubuntu Server, command-line operations, file system management, and Linux security concepts.
+
+
+Deliverables
+
+Completed:
+
+- Ubuntu Virtual Machine
+- Documentation
+- Planning Files
+- Scripts
+- Reports
+- Screenshots
+- Final Lab Environment
+
+
+Conclusion
+
+The Linux Privilege Escalation Lab was successfully created and documented. The environment accurately demonstrates basic Linux security concepts, permission management, user privilege separation, and controlled administrative access. The task serves as a strong foundation for learning Linux privilege escalation techniques and secure system administration.
